@@ -12,3 +12,25 @@
 |   Website: http://www.antsin.com/                              |
 |----------------------------------------------------------------+
 */ 
+/* General styles */
+h1, h2 {
+  margin-bottom: 10px;
+}
+table {
+  width: 99%;
+}
+
+
+/* VBS page */
+.past-vbs {
+  color: #9C9C9C;
+}
+.page-vbs .extra-links {
+  display: none;
+}
+#vbs .node {
+  margin-bottom: 30px;
+}
+
+
+

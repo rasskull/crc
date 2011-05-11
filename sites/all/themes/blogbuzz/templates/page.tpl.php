@@ -150,5 +150,5 @@
       </div></div> <!-- /#footer-inner, /#footer -->
     <?php endif; ?>  
     
-	<div id="closure"><div id="closure-inner"><div id="designed-by"><small><a href="http://www.antsin.com/en/" title="Drupal Theme">Designed by Antsin.com</a></small></div><?php print render($page['footer']); ?></div></div>
+	<div id="closure"><div id="closure-inner"><div id="designed-by"><small>Copyright <?php print date('Y', time())?> Crossroads Neighborhood Church</small></div><?php print render($page['footer']); ?></div></div>
   </div></div> <!-- /#page-inner, /#page -->

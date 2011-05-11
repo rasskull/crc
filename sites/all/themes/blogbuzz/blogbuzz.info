@@ -7,6 +7,8 @@ core        = 7.x
 stylesheets[all][]   = css/blogbuzz.css
 stylesheets[all][]   = css/custom.css
 
+scripts[] = js/scripts.js
+
 regions[header]            = header
 regions[primary_menu]      = primary menu
 regions[help]              = help
