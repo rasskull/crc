@@ -1,4 +1,5 @@
 <?php
+// $Id: views_plugin_argument_validate_user.inc,v 1.2.6.10 2010/11/05 07:20:54 dereine Exp $
 
 /**
  * Validate whether an argument is a valid user.
@@ -20,7 +21,7 @@ class views_plugin_argument_validate_user extends views_plugin_argument_validate
   function options_form(&$form, &$form_state) {
     $form['type'] = array(
       '#type' => 'radios',
-      '#title' => t('Type of user filter value to allow'),
+      '#title' => t('Type of user argument to allow'),
       '#options' => array(
         'uid' => t('Only allow numeric UIDs'),
         'name' => t('Only allow string usernames'),
@@ -37,20 +38,20 @@ class views_plugin_argument_validate_user extends views_plugin_argument_validate
 
     $form['roles'] = array(
       '#type' => 'checkboxes',
-      '#prefix' => '<div id="edit-options-validate-options-user-roles-wrapper">',
+      '#prefix' => '<div id="edit-options-argument-validate-user-roles-wrapper">',
       '#suffix' => '</div>',
       '#title' => t('Restrict to the selected roles'),
-      '#options' => array_map('check_plain', user_roles(TRUE)),
+      '#options' => user_roles(TRUE),
       '#default_value' => $this->options['roles'],
       '#description' => t('If no roles are selected, users from any role will be allowed.'),
       '#process' => array('form_process_checkboxes', 'ctools_dependent_process'),
       '#dependency' => array(
-        'edit-options-validate-options-user-restrict-roles' => array(1),
+        'edit-options-argument-validate-user-restrict-roles' => array(1),
       ),
     );
   }
 
-  function options_submit(&$form, &$form_state, &$options = array()) {
+  function options_submit(&$form, &$form_state, &$options) {
     // filter trash out of the options so we don't store giant unnecessary arrays
     $options['roles'] = array_filter($options['roles']);
   }
@@ -121,3 +122,4 @@ class views_plugin_argument_validate_user extends views_plugin_argument_validate
     return TRUE;
   }
 }
+
