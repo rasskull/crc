@@ -1,0 +1,117 @@
+<?php
+// DRUPAL HOOKS
+/**
+* Display help and module information
+* @param section which section of the site we're displaying help
+* @return help text for section
+*/
+
+function ssm_git_update_help($section='') {
+
+  $output = '';
+
+  switch ($section) {
+    case "admin/help#ssm_git_update":
+      $output = '<p>'.  t("Superstar Git Update Tools"). '</p>';
+      break;
+  }
+
+  return $output;
+} 
+
+
+/**
+* Valid permissions for this module
+* @return array An array of valid permissions for the module
+*/
+
+function ssm_git_update_perm() {
+  return array('administer ssm git update');
+} 
+
+
+/**
+ * Implementation of hook_menu().
+ */
+ 
+function ssm_git_update_menu() {
+
+    $items = array();
+    $items["admin/settings/ssm-tools/git-update"] = array(
+        'title' => t('Superstar Media Git Update Tools'),
+		'page callback' => 'ssm_git_update_page', 
+		'description' => t('Superstar Media tools for site updating from a Git repo'),
+        'access arguments' => array('administer ssm git update'),
+      );
+    return $items;
+}
+
+
+function ssm_git_update_page() {
+  return drupal_get_form('ssm_git_update_page_form');
+}
+
+function ssm_git_update_page_form() {
+  
+  $form['dbinfo']['ssm_git_update_svn_update_site_path'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Full server path to sites folder'),
+    '#default_value' => variable_get('ssm_git_update_svn_update_site_path', ''),
+  );
+  
+  $form['dbinfo']['ssm_git_update_svn_update_repo'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Git repository'),
+    '#default_value' => variable_get('ssm_git_update_svn_update_repo', 'origin'),
+  );
+  
+  $form['dbinfo']['ssm_git_update_svn_update_branch'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Git branch'),
+    '#default_value' => variable_get('ssm_git_update_svn_update_branch', 'master'),
+  );
+  
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Update From Git'),
+  );
+  return $form;
+}
+
+function ssm_git_update_page_form_submit($form_id, $form_values) {
+
+  //var_dump($form_values);
+
+  variable_set('ssm_git_update_svn_update_site_path', $form_values['values']['ssm_git_update_svn_update_site_path']);
+  variable_set('ssm_git_update_svn_update_repo', $form_values['values']['ssm_git_update_svn_update_repo']);
+  variable_set('ssm_git_update_svn_update_branch', $form_values['values']['ssm_git_update_svn_update_branch']);
+
+  if(variable_get('ssm_git_update_svn_update_site_path', '')) {
+ 
+    $output = array(); 
+    $error_code = 0;
+    $path = variable_get('ssm_git_update_svn_update_site_path', '');
+    $repo = variable_get('ssm_git_update_svn_update_repo', 'origin');
+    $branch = variable_get('ssm_git_update_svn_update_branch', 'master');
+    // build command
+    $cmd = 'cd '.$path.'; sudo -H -u root git pull '.$repo.' '.$branch.' 2>&1';
+  
+    exec($cmd, $output, $error_code); 
+
+    if ($error_code) { 
+      echo "Error $error_code occurred<br />\n"; 
+    } 
+  
+    $message = 'Updated/Set ' . nl2br(htmlspecialchars(implode("\n", $output))) . "\n"; 
+  
+  } else {
+    $message = 'Site path not set!';
+  }
+  
+  drupal_set_message(t($message));
+}
+
+
+
+
+// no ending php tag!

@@ -1,0 +1,5 @@
+; $Id: ssm_git_update.info,v 1.0.0.0 2011/02/01 09:18:32 rasskull Exp $
+name = Git Update
+description = "Git update tools"
+core = 7.x
+version = "7.x-1.x"
