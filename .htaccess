@@ -139,4 +139,7 @@ DirectoryIndex index.php index.html index.htm
   </IfModule>
 </IfModule>
 
+php_value upload_max_filesize 40M
+php_value post_max_size 40M
+
 # $Id: .htaccess,v 1.111 2010/11/23 02:59:05 dries Exp $
