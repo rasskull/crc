@@ -148,11 +148,11 @@ ul.pager {
 }
 
 #primary ul ul a {
-  border-top: 1px solid #D8023F;  
-  border-bottom: 1px solid #6A0421;
+  border-top: 1px solid #5b2359;  
+  border-bottom: 1px solid #421240;
 }
 
 #primary ul ul ul li a {
-  border-top: 1px solid #D8023F;  
-  border-bottom: 1px solid #6A0421 !important;
+  border-top: 1px solid #5b2359;  
+  border-bottom: 1px solid #421240 !important;
 }
