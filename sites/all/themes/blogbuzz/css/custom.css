@@ -27,9 +27,13 @@ table {
 #secondary {
   background: transparent;
   position: absolute;
+  top: 3px;
 }
 #secondary-inner {
   padding: 0;
+}
+#secondary-inner ul {
+  padding-top: 8px;
 }
 #site-name {
   width:400px;
@@ -66,5 +70,49 @@ table {
   margin-bottom: 30px;
 }
 
-
-
+#block-views-spotlight-block_1 {
+  width: 530px;
+  position: relative;
+  float:left;
+}
+#block-nodeblock-6 {
+  float: right;
+  width: 360px;
+}
+.view-spotlight .field-name-field-image img {
+  background: #EEE;
+  border: 1px solid #DDD;
+  float: left;
+  margin: 0px 20px 10px 0px;
+  padding: 10px;
+}
+#views_slideshow_controls_text_spotlight-block_1 {
+  float:right;
+  
+}
+#views_slideshow_controls_text_previous_spotlight-block_1 {
+  cursor:  pointer;
+  background: #DDD;
+  color: #9b6b99;
+  padding: 2px 4px;
+  margin-right: 10px;
+}
+#views_slideshow_controls_text_pause_spotlight-block_1 {
+  cursor:  pointer;
+  background: #DDD;
+  color: #9b6b99;
+  padding: 2px 4px;
+  margin-right: 10px;
+}
+#views_slideshow_controls_text_next_spotlight-block_1 {
+  cursor:  pointer;
+  background: #DDD;
+  color: #9b6b99;
+  padding: 2px 4px;
+  margin-right: 8px;
+}
+#views_slideshow_controls_text_previous_spotlight-block_1:hover,
+#views_slideshow_controls_text_pause_spotlight-block_1:hover,
+#views_slideshow_controls_text_next_spotlight-block_1:hover {
+  color: #421240;
+}

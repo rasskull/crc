@@ -19,7 +19,7 @@ body {
 }
 
 a, .node-blog .date {
-  color: #C72840;
+  color: #5b2359;
 }
 
 /** showcase **/
@@ -29,7 +29,7 @@ a, .node-blog .date {
 
 #showcase div.number-pager {
   border-top: 1px solid #386DA8;
-  background-color: #719BD1;
+  background-color: #a183a0;
 }
 
 #showcase div.number-pager a {
@@ -62,7 +62,7 @@ a, .node-blog .date {
 }
 
 .comment-by-node-author .user-picture img {
-  border: 1px solid #C72840;
+  border: 1px solid #5b2359;
 }
 
 /** sidebar **/
@@ -83,7 +83,7 @@ a, .node-blog .date {
 #footer {
   color: #fff;
   border-top: 2px solid #386DA8;
-  background-color: #719BD1;
+  background-color: #a183a0;
 }
 
 #footer .title {
@@ -101,7 +101,7 @@ span.button, .read-more {
 }
 
 span.button input.form-submit, .read-more a {
-  border: 1px solid #D8023F;
+  border: 1px solid #7c517a;
   background-color: #41103f;  
 }
 
@@ -114,13 +114,13 @@ span.button input.form-submit:hover, .read-more a:hover {
 /** pager **/
 ul.pager {
   border-top: 1px solid #386DA8;
-  background-color: #719BD1;  
+  background-color: #a183a0;  
 }
 
 /** breadcrumb **/
 #breadcrumb {
   border-bottom: 1px solid #386DA8;
-  background-color: #719BD1;
+  background-color: #ae9ead;
 }
 
 /** menu **/
@@ -148,11 +148,11 @@ ul.pager {
 }
 
 #primary ul ul a {
-  border-top: 1px solid #5b2359;  
+  border-top: 1px solid #421240;  
   border-bottom: 1px solid #421240;
 }
 
 #primary ul ul ul li a {
-  border-top: 1px solid #5b2359;  
+  border-top: 1px solid #421240;  
   border-bottom: 1px solid #421240 !important;
 }
