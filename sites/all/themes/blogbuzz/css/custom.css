@@ -50,7 +50,9 @@ table {
 #primary ul li.active-trail {
   background-color: #5b2359;
 }
-
+#primary ul li ul li a {
+  color: #e89ce5;
+}
 
 
 /* VBS page */

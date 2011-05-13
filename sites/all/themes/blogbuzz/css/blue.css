@@ -38,7 +38,7 @@ a, .node-blog .date {
 
 #showcase div.number-pager a.activeSlide {
   color: #fff;
-  background: #5b2359;  
+  background: #41103f;  
 }
 
 /** main & node **/
@@ -97,16 +97,16 @@ a, .node-blog .date {
 
 /** button & read more **/
 span.button, .read-more {
-  border: 1px solid #5b2359;
+  border: 1px solid #41103f;
 }
 
 span.button input.form-submit, .read-more a {
   border: 1px solid #D8023F;
-  background-color: #5b2359;  
+  background-color: #41103f;  
 }
 
 span.button input.form-submit:hover, .read-more a:hover {
-  color: #5b2359;
+  color: #41103f;
   border: 1px solid #C0D8F0;
   background-color: #C0D8F0; 
 }
@@ -125,7 +125,7 @@ ul.pager {
 
 /** menu **/
 #primary {
-  background: #5b2359 url("../images/blue/bg_menu.png") repeat-x bottom left; 
+  background: #41103f url("../images/blue/bg_menu.png") repeat-x bottom left; 
 }
 
 #primary ul li {
@@ -135,16 +135,16 @@ ul.pager {
 #primary ul li:hover,
 #primary ul li.active,
 #primary ul li.active-trail {
-  background-color: #5b2359;
+  background-color: #41103f;
   background-image: none;
 }
 
 #primary ul ul li {
-  background-color: #5b2359;
+  background-color: #41103f;
 }
 
 #primary ul ul li.expanded {
-  background: #5b2359 url("../images/bg_menu_arrow.png") no-repeat 90% 50%;
+  background: #41103f url("../images/bg_menu_arrow.png") no-repeat 90% 50%;
 }
 
 #primary ul ul a {
