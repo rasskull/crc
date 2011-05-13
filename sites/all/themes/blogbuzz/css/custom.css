@@ -20,6 +20,27 @@ table {
   width: 99%;
 }
 
+#header {
+  background: #272626 url(../images/crossroads_header.jpg) no-repeat top center;
+  height: 250px;
+}
+#secondary {
+  background: transparent;
+  position: absolute;
+}
+#secondary-inner {
+  padding: 0;
+}
+#site-name {
+  width:400px;
+  height: 200px;
+}
+#site-name a {
+  display: block;
+  text-indent: -9999px;
+  width:100%;
+  height: 100%;
+}
 
 /* VBS page */
 .past-vbs {
