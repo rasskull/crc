@@ -42,6 +42,17 @@ table {
   height: 100%;
 }
 
+#primary { 
+  background: #5b2359 url(../images/purple/bg_menu.png) repeat-x 0% 100%;
+}
+#primary ul li:hover, 
+#primary ul li.active, 
+#primary ul li.active-trail {
+  background-color: #5b2359;
+}
+
+
+
 /* VBS page */
 .past-vbs {
   color: #9C9C9C;

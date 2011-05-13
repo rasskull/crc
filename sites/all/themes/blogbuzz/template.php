@@ -24,7 +24,8 @@ function blogbuzz_preprocess_html(&$vars) {
     return $style;
   }
 
-  drupal_add_css(drupal_get_path('theme','blogbuzz') . '/css/' . get_blogbuzz_style() . '.css', array('group' => CSS_THEME, 'every_page' => TRUE));
+  //drupal_add_css(drupal_get_path('theme','blogbuzz') . '/css/' . get_blogbuzz_style() . '.css', array('group' => CSS_THEME, 'every_page' => TRUE));
+  drupal_add_css(drupal_get_path('theme','blogbuzz') . '/css/' . get_blogbuzz_style() . '.css', array('group' => CSS_THEME, 'every_page' => TRUE, 'weight' => -1));
   // Add conditional stylesheets for IE
   drupal_add_css(path_to_theme() . '/css/ie7.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'IE 7', '!IE' => FALSE), 'preprocess' => FALSE));
   drupal_add_css(path_to_theme() . '/css/ie8.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'IE 8', '!IE' => FALSE), 'preprocess' => FALSE));
