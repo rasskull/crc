@@ -81,9 +81,14 @@
                   <?php print render($page['help']); ?>
                 </div> <!-- /#content-header -->
               <?php endif; ?>
-              <?php print render($page['content']); ?>
+              <?php if (!$is_front) print render($page['content']); ?>
+              
+              <?php print render($page['content_bottom']); ?>
+              
             </div> <!-- /#content-inner -->	
           </div> <!-- /#content -->
+          
+          
 
           <?php if ($page['sidebar_first']): ?>
             <div id="sidebar-left">

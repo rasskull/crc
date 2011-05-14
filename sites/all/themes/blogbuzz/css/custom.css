@@ -16,8 +16,12 @@
 h1, h2 {
   margin-bottom: 15px;
 }
-h1.title {
+h1.title,
+body.front h2 {
   font-size: 260%;
+}
+body.front h2.node-title {
+  font-size: 200%;
 }
 table {
   width: 99%;

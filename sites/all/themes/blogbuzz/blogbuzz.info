@@ -16,6 +16,7 @@ regions[page_top]          = page top
 regions[page_bottom]       = page bottom
 
 regions[content]           = content
+regions[content_bottom]    = content_bottom
 regions[sidebar_first]     = left sidebar
 regions[sidebar_second]    = right sidebar
 
