@@ -47,7 +47,7 @@ a, .node-blog .date {
 }
 
 .extra-links {
-  background-color: #C0D8F0;
+  background-color: #DEE8EB; /*#C0D8F0;*/
 }
 
 #main-bottom h2 {
@@ -98,6 +98,7 @@ a, .node-blog .date {
 /** button & read more **/
 span.button, .read-more {
   border: 1px solid #41103f;
+  background-color: #41103f;
 }
 
 span.button input.form-submit, .read-more a {

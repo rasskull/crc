@@ -14,7 +14,10 @@
 */ 
 /* General styles */
 h1, h2 {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+}
+h1.title {
+  font-size: 260%;
 }
 table {
   width: 99%;
@@ -88,7 +91,6 @@ table {
 }
 #views_slideshow_controls_text_spotlight-block_1 {
   float:right;
-  
 }
 #views_slideshow_controls_text_previous_spotlight-block_1 {
   cursor:  pointer;
@@ -115,4 +117,32 @@ table {
 #views_slideshow_controls_text_pause_spotlight-block_1:hover,
 #views_slideshow_controls_text_next_spotlight-block_1:hover {
   color: #421240;
+}
+
+/* messages page */
+.field-name-field-message-image {
+  float: right;
+}
+.node-type-message .field-name-field-message-image {
+  width: 220px;
+}
+.node-type-message .field-name-field-message-image img {
+  width: 220px;
+  height: 166px;
+}
+.field-name-field-message-speaker {
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.field-name-field-message-date {
+  font-style: italic;
+  color: #777;
+  padding-bottom: 6px;
+}
+.message-sub-text {
+  padding: 6px 0;
+  width: 400px;
+  font-style: italic;
+  color: #888;
 }
