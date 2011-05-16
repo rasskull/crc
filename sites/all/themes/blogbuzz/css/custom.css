@@ -68,6 +68,54 @@ table {
   color: #b595b4;
 }
 
+/*home page */
+body.front #main-inner {
+  padding-top:17px;
+}
+#content-top {
+  background: url(../images/contact-hours-bar.png) no-repeat;
+  height: 120px;
+  font-family: Georgia, Times, Serif;
+  position: relative;
+}
+.hours-bar-time-info {
+  left: 39px;
+  position: absolute;
+  top: 13px;
+  width: 509px;
+}
+.hours-bar-time-info h4 {
+  font-size: 17px;
+  line-height: 16px;
+}
+.hours-bar-time-info p {
+  padding: 0;
+  margin: 0;
+  color: #777;
+}
+.hours-bar-children-info {
+  position: absolute;
+  top: 47px;
+  left: 31px;
+  height: 40px;
+  width:430px;
+  padding-left: 55px;
+  padding-top: 8px;
+  line-height: 15px;
+  background: url(../images/rocking-horse.png) no-repeat;
+}
+.hours-bar-address-info {
+  position: absolute;
+  top:10px;
+  left: 588px;
+  width:363px;
+  font-size: 17px;
+  color: #777;
+  line-height: 20px;
+}
+.hours-bar-address-info a {
+  font-size: 14px;
+}
 
 /* VBS page */
 .past-vbs {
