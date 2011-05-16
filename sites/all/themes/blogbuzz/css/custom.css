@@ -74,15 +74,17 @@ body.front #main-inner {
 }
 #content-top {
   background: url(../images/contact-hours-bar.png) no-repeat;
-  height: 120px;
+  height: 118px;
   font-family: Georgia, Times, Serif;
   position: relative;
+  margin-left: -12px;
+  width: 985px;
 }
 .hours-bar-time-info {
-  left: 39px;
+  left: 28px;
   position: absolute;
   top: 13px;
-  width: 509px;
+  width: 553px;
 }
 .hours-bar-time-info h4 {
   font-size: 17px;
@@ -96,9 +98,9 @@ body.front #main-inner {
 .hours-bar-children-info {
   position: absolute;
   top: 47px;
-  left: 31px;
+  left: 20px;
   height: 40px;
-  width:430px;
+  width:500px;
   padding-left: 55px;
   padding-top: 8px;
   line-height: 15px;
@@ -107,7 +109,7 @@ body.front #main-inner {
 .hours-bar-address-info {
   position: absolute;
   top:10px;
-  left: 588px;
+  left: 624px;
   width:363px;
   font-size: 17px;
   color: #777;
