@@ -23,6 +23,9 @@ body.front h2 {
 body.front h2.node-title {
   font-size: 200%;
 }
+#block-nodeblock-6 h2 {
+  font-size: 200%;
+}
 table {
   width: 99%;
 }

@@ -58,6 +58,13 @@
 
 	<div id="main">
 	  <div id="main-inner">
+	    <?php if ($page['content_top']): ?>
+	    <div class="clearfix">
+	      <div id="content-top">
+	      <?php print render($page['content_top']); ?>
+	      </div>
+	    </div>
+	    <?php endif; ?> 
 	    <div class="clearfix">
           <?php if ($page['showcase']): ?>
 	        <div id="showcase" ><div id="showcase-inner" class="clearfix">
