@@ -192,7 +192,8 @@ body.front #main-inner {
   font-weight: bold;
   font-size: 14px;
 }
-.field-name-field-message-date {
+.field-name-field-message-date,
+.em-text {
   font-style: italic;
   color: #777;
   padding-bottom: 6px;
@@ -215,9 +216,10 @@ ul.staff-list {
 }
 ul.staff-list li {
   list-style-type: none;
-  padding: 0;
+  padding: 0 0 0 10px 0;
   margin: 0 0 20px 0;
   clear: both;
+  border-bottom: 1px solid #555;
 }
 .bio-img {
   float: left;
@@ -225,4 +227,5 @@ ul.staff-list li {
 }
 .bio-info {
   float: left;
+  width: 534px;
 }
