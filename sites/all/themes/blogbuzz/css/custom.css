@@ -214,12 +214,14 @@ ul.staff-list {
   padding: 0;
   margin: 0;
 }
+.staff-header-bio,
 ul.staff-list li {
   list-style-type: none;
   padding: 0 0 0 10px 0;
   margin: 0 0 20px 0;
   clear: both;
-  border-bottom: 1px solid #555;
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
 }
 .bio-img {
   float: left;
