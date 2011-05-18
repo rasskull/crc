@@ -203,3 +203,26 @@ body.front #main-inner {
   font-style: italic;
   color: #888;
 }
+
+#sidebar-left p {
+  margin:0;
+}
+
+/* staff page */
+ul.staff-list {
+  padding: 0;
+  margin: 0;
+}
+ul.staff-list li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  clear: both;
+}
+.bio-img {
+  float: left;
+  width: 110px;
+}
+.bio-info {
+  float: left;
+}
