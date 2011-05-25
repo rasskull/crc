@@ -72,6 +72,16 @@ table {
 body.front #main-inner {
   padding-top:17px;
 }
+.view-front-posts .views-field-title {
+  font-family: Georgia, Times, Serif;
+  font-size: 24px;
+}
+.view-front-posts  .views-row {
+  padding: 0 0 5px 0;
+  margin: 0 0 20px 0;
+  clear: both;
+  border-bottom: 1px solid #ccc;
+}
 #content-top {
   background: url(../images/contact-hours-bar.png) no-repeat;
   height: 118px;
