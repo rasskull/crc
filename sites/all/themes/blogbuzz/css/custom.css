@@ -129,6 +129,14 @@ body.front #main-inner {
   font-size: 14px;
 }
 
+/* menu */
+.block-system-main-menu ul li {
+  float:left;
+  padding-right: 30px;
+  list-style-type: none;
+  border-bottom: none;
+}
+
 /* VBS page */
 .past-vbs {
   color: #9C9C9C;
