@@ -77,6 +77,10 @@ table {
   padding: 5px 0px;
 }
 
+#breadcrumb {
+  display: none;
+}
+
 /*home page */
 body.front #main-inner {
   padding-top:17px;
