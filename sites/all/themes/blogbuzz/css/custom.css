@@ -145,6 +145,7 @@ body.front #main-inner {
   position: absolute;
   right: 20px;
   top: 42px;
+  z-index: 5;
 }
 
 /* footer */
