@@ -141,6 +141,11 @@ body.front #main-inner {
 .hours-bar-address-info a {
   font-size: 14px;
 }
+.facebook-btn {
+  position: absolute;
+  right: 20px;
+  top: 42px;
+}
 
 /* footer */
 #footer {
