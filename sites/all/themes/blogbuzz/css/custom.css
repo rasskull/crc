@@ -124,10 +124,10 @@ body.front #main-inner {
   left: 20px;
   height: 40px;
   width:500px;
-  padding-left: 55px;
+  padding-left: 9px;
   padding-top: 8px;
   line-height: 15px;
-  background: url(../images/rocking-horse.png) no-repeat;
+  /*background: url(../images/rocking-horse.png) no-repeat;*/
 }
 .hours-bar-address-info {
   position: absolute;
