@@ -68,6 +68,21 @@ function blogbuzz_process_page(&$vars) {
   else {
     $vars['secondary_nav'] = FALSE;
   }
+  
+  if($vars['node']->type == 'song') {
+    global $user;
+    
+    if(in_array('worship team', $user->roles) || in_array('worship 3', $user->roles)) {  
+     // leave alone as access is allowed
+      
+    } else {
+      // send to login page
+      drupal_goto('user/login');
+    }
+    
+  }
+
+  
 }
 
 /**
@@ -82,6 +97,7 @@ function blogbuzz_preprocess_node(&$vars) {
   if ($vars['view_mode'] == 'full' && node_is_page($vars['node'])) {
     $vars['classes_array'][] = 'node-full';
   }
+  
 }
 
 /**
