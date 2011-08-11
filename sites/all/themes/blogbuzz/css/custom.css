@@ -282,3 +282,11 @@ ul.staff-list li {
   float: left;
   width: 534px;
 }
+.page-node-207 h1.title {
+  background: url(../images/online_giving_banner.jpg);
+  height: 143px;
+  width: 660px;
+  text-indent: -9999px;
+  overflow: hidden;
+  padding: 0;
+}
