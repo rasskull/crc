@@ -290,3 +290,7 @@ ul.staff-list li {
   overflow: hidden;
   padding: 0;
 }
+.field-name-field-gallery-photo .field-item {
+  float: left;
+  padding-right: 5px;
+}
