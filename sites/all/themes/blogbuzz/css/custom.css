@@ -71,7 +71,7 @@ table {
   color: #b595b4;
 }
 #primary a {
-  padding: 17px 25px 9px;
+  padding: 17px 15px 9px;
 }
 #primary ul ul a {
   padding: 5px 0px;
@@ -293,4 +293,11 @@ ul.staff-list li {
 .field-name-field-gallery-photo .field-item {
   float: left;
   padding-right: 5px;
+}
+.node-gallery-sub h3 {
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+.node-gallery-sub {
+  width: 680px;
 }
