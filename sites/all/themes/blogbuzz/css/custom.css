@@ -301,3 +301,18 @@ ul.staff-list li {
 .node-gallery-sub {
   width: 680px;
 }
+
+.view-galleries .views-row {
+  clear:both;
+  border-bottom: 1px solid #DDD;
+  padding-bottom: 9px;
+  margin-bottom: 10px;
+}
+.view-galleries .views-field-entity-id {
+  float:left;
+}
+.view-galleries .views-field-title {
+  margin-left: 240px;
+  font-size: 30px;
+  line-height: 150px;
+}
