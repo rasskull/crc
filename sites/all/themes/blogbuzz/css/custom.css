@@ -302,16 +302,16 @@ ul.staff-list li {
   width: 680px;
 }
 
-.view-galleries .views-row {
+.view-galleries.view-display-id-page_1 .views-row {
   clear:both;
   border-bottom: 1px solid #DDD;
   padding-bottom: 9px;
   margin-bottom: 10px;
 }
-.view-galleries .views-field-entity-id {
+.view-galleries.view-display-id-page_1 .views-field-entity-id {
   float:left;
 }
-.view-galleries .views-field-title {
+.view-galleries.view-display-id-page_1 .views-field-title {
   margin-left: 240px;
   font-size: 30px;
   line-height: 150px;
