@@ -1,0 +1,11 @@
+<?php
+
+function imagefield_batch_upload_install() {
+
+  // Install success 
+}
+
+function imagefield_batch_upload_uninstall() {
+  // unset vars
+}
+
