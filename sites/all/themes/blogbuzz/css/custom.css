@@ -96,8 +96,8 @@ body.front #main-inner {
   border-bottom: 1px solid #ccc;
 }
 #content-top {
-  background: url(../images/contact-hours-bar.png) no-repeat;
-  height: 118px;
+  background: url(../images/contact-hours-bar-taller.png) no-repeat;
+  height: 160px;
   font-family: Georgia, Times, Serif;
   position: relative;
   margin-left: -12px;
@@ -110,8 +110,9 @@ body.front #main-inner {
   width: 553px;
 }
 .hours-bar-time-info h4 {
-  font-size: 17px;
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 11px;
+  padding-bottom: 10px;
 }
 .hours-bar-time-info p {
   padding: 0;
@@ -120,7 +121,7 @@ body.front #main-inner {
 }
 .hours-bar-children-info {
   position: absolute;
-  top: 47px;
+  top: 103px;
   left: 20px;
   height: 40px;
   width:500px;
