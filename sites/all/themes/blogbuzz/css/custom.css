@@ -317,3 +317,6 @@ ul.staff-list li {
   font-size: 30px;
   line-height: 150px;
 }
+.page-parenting-tips .extra-links {
+  display: none;
+}
