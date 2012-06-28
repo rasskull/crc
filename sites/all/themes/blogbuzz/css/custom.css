@@ -320,13 +320,7 @@ ul.staff-list li {
 .page-parenting-tips .extra-links {
   display: none;
 }
-
-.view-id-galleries.view-display-id-page_2 .views-row {
-  float: left;
-  width: 250px;
-  height: 180px;
-}
-.view-id-galleries.view-display-id-page_2 .views-row .views-field-title {
+.view-id-galleries.view-display-id-page_2 .views-field-title {
   font-weight: bold;
   font-size: 15px;
 }
